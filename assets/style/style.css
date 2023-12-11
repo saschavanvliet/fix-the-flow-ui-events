@@ -103,7 +103,8 @@ a:nth-of-type(3).turnaround {
   transition: 1s;
 }
 
-a:nth-of-type(4).popup { 
+.popupding { 
+  display: none; /*eerst is de popup niet te zien*/
   position: fixed;
   color: black;
   top: 50%;
@@ -118,4 +119,20 @@ a:nth-of-type(4).popup {
   visibility: visible;
   z-index: 999; /*de popup staat nu voor de andere elementen*/
   border-radius: 2%;
+}
+.showpopupding { /*nu is de popup wel te zien*/
+  display: block;
+}
+
+a:nth-of-type(5).gone {
+  transform: translateX(10em)
+}
+
+a:nth-of-type(6) {
+  background-color: var(--highlight-primary);
+  color: var(--secondary);
+}
+
+a:nth-of-type(6).clown {
+  background-color: pink;
 }

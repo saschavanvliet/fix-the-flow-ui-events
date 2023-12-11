@@ -29,7 +29,23 @@ function omdraaienouleh(){
 
 // button 4
 let development = document.querySelector('a:nth-of-type(4)')
+let popupding = document.querySelector('div.popupding')
 development.addEventListener('click', popupouleh)
 function popupouleh(){
-  development.classList.toggle('popup')
+  popupding.classList.toggle('showpopupding')
+}
+
+// button 5
+let sprint5 = document.querySelector('a:nth-of-type(5)')
+sprint5.addEventListener('mousemove', weg)
+function weg(){
+  sprint5.classList.toggle('gone')
+  console.log(sprint5)
+}
+
+// button 6
+let fix = document.querySelector('a:nth-of-type(6)')
+fix.addEventListener('mousemove', colorchange)
+function colorchange(){
+  fix.classList.toggle('clown')
 }
