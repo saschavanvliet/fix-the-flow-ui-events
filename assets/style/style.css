@@ -234,3 +234,31 @@ transition: 1s 1s ease;
   position: relative;
   left: 2em;
 }
+
+a:nth-of-type(10) {
+  background-color: yellow;
+  color: black;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(200px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.kaaseerst {
+  display: none;
+}
+
+.kaas1 {
+  font-size: 24px;
+  font-weight: bold;
+  animation: slideIn 1s ease-out; /* 1s is de duur van de animatie */
+  color: yellow;
+  font-size: 200px;
+}

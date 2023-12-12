@@ -72,3 +72,11 @@ user.addEventListener('mousemove', kiekeboe)
 function kiekeboe(){
   smeagol.classList.toggle('smeagolshow')
 }
+
+// button 10
+let interface = document.querySelector('a:nth-of-type(10)')
+let kaas1 = document.querySelector('.kaas1')
+interface.addEventListener('mouseover', breincelweg)
+function breincelweg(){
+  kaas1.classList.toggle('kaas1')
+}
