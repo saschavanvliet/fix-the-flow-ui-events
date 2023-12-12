@@ -174,3 +174,63 @@ a:nth-of-type(7).square {
       background-color: aliceblue;
     }
   } 
+
+.nobigmama {
+  display: none; /*eerst is de popup niet te zien*/
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: var(--secondary);
+  color: var(--highlight-primary);
+  border: var(--line) solid var(--highlight-primary);
+  border-radius: 12%;
+  padding: 12rem;
+  margin: 1rem;
+  transition: 0.3s;
+  max-width: 18em;
+  visibility: visible;
+  z-index: 999; /*de popup staat nu voor de andere elementen*/
+  animation-name: nobigmama;
+  animation: nobigmama 3s infinite alternate;
+  transition: rotate 0.5;
+}
+
+@keyframes nobigmama{
+  25%{
+    transform: rotate(90deg);
+  }
+  50%{
+    transform: rotate(180deg);
+  }
+  75%{
+    transform: rotate(270deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+
+.bigmama {
+  display: block;
+}
+
+img {
+  display: none;
+}
+
+.smeagol {
+display: none;
+position: fixed;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+z-index: 2;
+transition: 1s 1s ease;
+}
+
+.smeagolshow {
+  display: block;
+  position: relative;
+  left: 2em;
+}

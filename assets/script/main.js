@@ -59,7 +59,16 @@ function vorm(){
 
 // button 8
 let flow = document.querySelector('a:nth-of-type(8)')
-flow.addEventListener('click', groterworden)
-function groterworden(){
-  flow.classList.toggle('bigmama')
+let nobigmama = document.querySelector('div.nobigmama')
+flow.addEventListener('click', groteryuh)
+function groteryuh(){
+  nobigmama.classList.toggle('bigmama')
+}
+
+// button 9
+let user = document.querySelector('a:nth-of-type(9)')
+let smeagol = document.querySelector('.smeagol')
+user.addEventListener('mousemove', kiekeboe)
+function kiekeboe(){
+  smeagol.classList.toggle('smeagolshow')
 }
