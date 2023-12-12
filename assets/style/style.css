@@ -133,6 +133,44 @@ a:nth-of-type(6) {
   color: var(--secondary);
 }
 
-a:nth-of-type(6).clown {
-  background-color: pink;
+@keyframes disco {
+  0% {
+      background-color: pink;
+  }
+  25% {
+      background-color: rgb(244, 78, 78);
+  }
+  50% {
+      background-color: rgb(42, 145, 10);
+  }
+  75% {
+      background-color: rgb(12, 75, 202);
+  }
+  100% {
+      background-color: pink;
+  }
 }
+
+a:nth-of-type(6).clown {
+  animation: disco 0.5s infinite alternate;
+  transition: background-color 0.5s ease-out;
+}
+
+a:nth-of-type(7).square {
+  cursor:grab;
+  color: pink;
+    animation-name: square;
+    animation-duration: 2s;
+  }
+  
+  @keyframes square{
+    50%{
+      border-radius: 8px; 
+    }
+    0%{
+      background-color:rgb(244, 78, 78)
+    }
+    50%{
+      background-color: aliceblue;
+    }
+  } 

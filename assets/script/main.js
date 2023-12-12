@@ -49,3 +49,17 @@ fix.addEventListener('mousemove', colorchange)
 function colorchange(){
   fix.classList.toggle('clown')
 }
+
+// button 7
+let the = document.querySelector('a:nth-of-type(7)')
+the.addEventListener('dblclick', vorm)
+function vorm(){
+  the.classList.toggle('square')
+}
+
+// button 8
+let flow = document.querySelector('a:nth-of-type(8)')
+flow.addEventListener('click', groterworden)
+function groterworden(){
+  flow.classList.toggle('bigmama')
+}
